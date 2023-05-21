@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliciously Filipino</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    function showPrompt() {
+      var name = prompt("Welcome to my Reistaurant!\nPlease enter your name:");
+      if (name !== null && name !== "") 
+      {
+        alert("Hello, " + name + "! Welcome to my Restaurant!");
+      } 
+      else 
+      {
+        alert("Welcome to my Restaurant!");
+      }
+    }
+
+    window.onload = showPrompt;
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>REIstaurant</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <div class="banner-text">
+      <h2>Welcome to</h2>
+      <h1>REIstaurant</h1>
+      <p>Experience the authentic flavors of the Philippines</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Deliciously Filipino is a family-owned restaurant dedicated to bringing the traditional flavors of the Philippines to your table. We use fresh, locally-sourced ingredients to create mouthwatering dishes that will transport you to the beautiful islands of the Philippines.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="menu-text">
+      <h2>Our Menu</h2>
+      <p>Explore our wide selection of Filipino dishes, from hearty soups and stews to savory grilled meats and delectable desserts. Whether you're a fan of nilaga, sinigang, or kare-kare, we have something for everyone.</p>
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="nilaga.png" alt="Nilaga">
+        <h3>Nilaga</h3>
+        <p>Nilaga is a traditional Filipino boiled soup dish made with tender beef, vegetables, and aromatic spices.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="sinigang.png" alt="Sinigang">
+        <h3>Sinigang</h3>
+        <p>A sour soup with a tamarind base, loaded with vegetables and your choice of meat or seafood.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="karekare.png" alt="Kare-Kare">
+        <h3>Kare-Kare</h3>
+        <p>A rich and creamy stew made with oxtail, tripe, or beef, cooked in peanut sauce and served with bagoong.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="sisig.png" alt="Sisig">
+        <h3>Sisig</h3>
+        <p>Sisig is a sizzling and savory Filipino dish made from chopped and seasoned pig's head and liver, typically served with rice and condiments.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="bangus.png" alt="Bangus">
+        <h3>Bangus</h3>
+        <p>Bangus, also known as milkfish, is a popular and versatile fish in Filipino cuisine, often cooked in various ways such as grilled, fried, or stewed.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="calamares.png" alt="Calamares">
+        <h3>Calamares</h3>
+        <p>Calamares is a delicious and crispy Filipino dish made from battered and deep-fried squid rings, typically served with a tangy dipping sauce.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="palabok.png" alt="Palabok">
+        <h3>Palabok</h3>
+        <p>Palabok is a Filipino noodle dish with rice noodles, shrimp sauce, and garnishes like shrimp, chicharon, eggs, and green onions.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="lumpia.png" alt="Lumpia">
+        <h3>Lumpia</h3>
+        <p>Lumpia is a Filipino appetizer of thin spring roll wrappers filled with a flavorful mix of vegetables, meat, and spices, then deep-fried to crispy perfection. </p>
+      </div>
+    </div>
+
+    <h2 style="text-align: left;">Desserts</h2>
+
+    <div class="menu-items">
+    <div class="menu-item">
+      <img src="Avocado.png" alt="Avocado">
+      <h3>Abukado Lamaw </h3>
+      <p>Iced avocado with condensed milk is a creamy and refreshing dessert made by blending ripe avocados with condensed milk, served over crushed ice.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="Leche Flan.png" alt="Leche Flan">
+      <h3>Leche Flan</h3>
+      <p>Leche flan is a rich and creamy caramel custard dessert popular in Filipino cuisine, made with eggs, condensed milk, and caramelized sugar.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="Halohalo.png" alt="Halohalo">
+      <h3>Halo-halo</h3>
+      <p>Halo-halo is a Filipino dessert with layers of sweet ingredients, including crushed ice, fruits, beans, jellies, topped with milk and toppings.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="Cassava.png" alt="Cassava Cake">
+      <h3>Cassava Cake</h3>
+      <p>Cassava cake is a moist and sweet Filipino dessert made with grated cassava, coconut milk, and condensed milk, baked to perfection.</p>
+    </div>
+  </div>
+
+  </section>
+
+  <section id="contact">
+    <div class="contact-text">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you. Reach out to us for reservations, catering inquiries, or any questions you may have.</p>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-text">
+        <p>&copy; 2023 REIstaurant. All rights reserved.</p>
+        <p>Designed by Jia Yanga IT101 </p>
+      </div>
+    </footer>
+  </body>
+  </html>  
